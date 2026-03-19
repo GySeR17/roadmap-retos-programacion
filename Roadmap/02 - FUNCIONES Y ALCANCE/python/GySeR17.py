@@ -157,3 +157,37 @@ Dificultad extra:
 """
 
 def numeros():
+ pass
+
+#Siguiendo el video de brais:
+
+#Sin parametros:
+
+print("Sin parametos:")
+def saludar_1():
+    print("Hola Gyser17!")
+
+saludar_1()
+
+#con parametro:
+print("\nCon 1 parametro:")
+def saludar_2(name_2):
+    print(f"Hola, {name_2}")
+
+saludar_2("Sergio!")
+
+#Con varios parametros:
+print("\nCon varios parametros:")
+def saludar_3(saludo_3, name_3):
+    print(f"{saludo_3}, {name_3}")
+
+saludar_3("Buenos dias!","Sergio")
+
+#Con parametros por defecto:
+print("\nCon parametros por defecto:")
+
+def saludar_4(name_4 = "Gyser"):
+    print(f"Hola!, {name_4}!\nComo te va??")
+
+saludar_4()
+saludar_4("Sergio")
