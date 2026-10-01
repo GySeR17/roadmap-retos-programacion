@@ -85,6 +85,41 @@ print("ton" in ejemplo_5)  # Verifica si 'ton' está en la cadena
 print("taza" not in ejemplo_5)  # Verifica si 'taza' no está en la cadena
 print("ton" not in ejemplo_5)  # Verifica si 'ton' no está en la cadena
 
+print("10. Recorrido de cadenas:")
+
+ejemplo_6 = "parangaricutirimícuaro"
+
+for caracter in ejemplo_6:
+    print(caracter)  # Imprime cada carácter en una línea separada
+
+print("")
+for caracter in ejemplo_6:
+    print(caracter, end="")  # Imprime cada carácter en la misma línea
+
+print("")
+for i, letra in enumerate(ejemplo_6):
+    print(i, letra)  # Imprime cada carácter separado por un guion
+
+print("11. Comparación :")
+print("Python" == "python")  # Comparación de igualdad (sensible a mayúsculas y minúsculas)
+print("abc" == "ABC")
+print("abc" != "ABC")   #Comparación de desigualdad (sensible a mayúsculas y minúsculas)
+print("abc" < "ABC")    #Comparación de orden lexicográfico (sensible a mayúsculas y minúsculas)
+print("abc" > "ABC")
+print("Ana" < "Juan")
+
+print("12. Conversión a mayúsculas y minúsculas:")
+ejemplo_7 = "Hellriser"
+mensaje_3 = "Hola, me llamo Sergio Menchaca y estoy aprendiendo Python"
+print("Mayúsculas:", ejemplo_7.upper())  # Convierte a mayúsculas
+print("Minúsculas:", ejemplo_7.lower())  # Convierte a minúsculas
+print("Primer letra mayúscula:", ejemplo_7.capitalize())  # Convierte la primera letra a mayúscula
+print("Cada palabra con mayúscula:", mensaje_3.title())  # Convierte la primera letra de cada palabra a mayúscula
+
+
+
+
+
 
 """
 * DIFICULTAD EXTRA (opcional):
