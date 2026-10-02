@@ -115,6 +115,52 @@ print("Mayúsculas:", ejemplo_7.upper())  # Convierte a mayúsculas
 print("Minúsculas:", ejemplo_7.lower())  # Convierte a minúsculas
 print("Primer letra mayúscula:", ejemplo_7.capitalize())  # Convierte la primera letra a mayúscula
 print("Cada palabra con mayúscula:", mensaje_3.title())  # Convierte la primera letra de cada palabra a mayúscula
+print("Cambiar caso de las letras:", "PyThOn".swapcase())
+
+print("13. Eliminar espacios:")
+print("   Hola   ".strip())  # Elimina espacios al inicio y al final
+print("   Hola   ".lstrip())  # Elimina espacios al inicio
+print("   Hola   ".rstrip())  # Elimina espacios al final
+
+print("14. Buscar texto")
+ejemplo_8 = "Hola, me llamo Sergio Menchaca y estoy aprendiendo Python"
+print(ejemplo_8.find("Sergio"))  # Devuelve el índice de la primera aparición de "Sergio"
+print(ejemplo_8.find("Python"))  # Devuelve el índice de la primera aparición de "Python"
+print(ejemplo_8.find("Java"))  # Devuelve -1 si no se encuentra la subcadena
+print(ejemplo_8.index("Sergio"))  # Devuelve el índice de la primera aparición de "Sergio", pero lanza error si no lo encuentra
+
+ejemplo_9 = "Banana"
+print(ejemplo_9.find("ana"))  # Devuelve el índice de la primera aparición de "ana"
+print(ejemplo_9.find("a"))  # Devuelve el índice de la última aparición de "a"
+
+print("15. Reemplazar texto:")
+ejemplo_10 = "Hola, me llamo Sergio Menchaca y estoy aprendiendo Python"
+print(ejemplo_10.replace("Sergio", "María"))  # Reemplaza "Sergio" por "María"
+print(ejemplo_10.replace("Python", "Java"))  # Reemplaza "Python" por "Java"
+ejemplo_11 = "a-a-a-a-a-a-a-a"
+print(ejemplo_11.replace("a", "c", 3))  # Reemplaza las primeras 3 apariciones de "a" por "c"
+
+print("16. Dividir cadenas:")
+ejemplo_12 = "Joel,Sergio,María,Juan"
+lista = ejemplo_12.split(",")  # Divide la cadena en una lista usando la coma como separador
+print(lista)
+
+ejemplo_13 = "Joel Sergio María Juan" #Sin separador, por lo que se divide por espacios
+print(ejemplo_13.split())  # Divide la cadena en una lista usando el espacio como separador
+
+print("17. Unir cadenas:")
+nombres = ["Joel", "Sergio", "María", "Juan"]
+resultado = ", ".join(nombres)  # Une la lista en una cadena usando la coma y el espacio como separador
+print(resultado)
+
+print("18. Interpolación de cadenas(f-strings):")
+nombre = "Sergio"
+edad = 30
+print(f"Hola, me llamo {nombre} y tengo {edad} años.")
+
+print(f" 2 + 2 = {2 + 2}")  # Se pueden realizar operaciones dentro de las llaves
+
+print("Verificación de cadenas:")
 
 
 
