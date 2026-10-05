@@ -61,13 +61,81 @@ print("Mismo objeto en memoria")
 
 print("3. Asignacion por referencia(comportamiento tipico de los objetos mutables)")
 lista1 = [1, 2, 3]
+print(lista1)
 lista2 = lista1
+print("Comprobacion antes de append")
+print(id(lista1))
+print(id(lista2))
 """
 En memoria: 
 lista1 ─┐
         ├──► [1, 2, 3]
 lista2 ─┘
+Las dos variables apuntan al mismo objeto.
 """
+lista2.append(4)    # Si se modifica
+print("Comprobacion despues de append")
+print(id(lista1))
+print(id(lista2))
+"""
+lista1 ─┐
+        ├──► [1, 2, 3, 4]
+lista2 ─┘
+La lista cambia pero para ambas
+"""
+print(lista1)
+
+print("4. Paso de parametros en funciones")
+
+def mostrar(numero):
+    print(numero)
+
+y = 9
+mostrar(y)  #No recibe una copia, sino una referencia al objeto "9".
+
+def modificar(numero):
+    numero = 20
+    print(numero)
+
+z = 15
+modificar(z)
+print(z)
+
+print("5. Funcion con objeto mutable")
+def modificar(lista):
+    lista.append(4)
+
+numeros = [1, 2, 3]
+print(numeros)
+modificar(numeros)
+print(numeros)
+# Modifica el objeto original.
+
+"""
+Antes de modificar
+numeros ──┐
+          ├──► [1,2,3]
+lista ────┘
+Despues
+numeros ──┐
+          ├──► [1,2,3,4]
+lista ────┘
+"""
+
+# Reasignar un mutable no es lo mismo que modificarlo:
+def modificar_2(lista):
+    lista = [100, 200, 300]
+
+numeros = [1, 2, 3]
+
+modificar_2(numeros)
+print(numeros)
+
+
+
+
+
+
 
 
 
